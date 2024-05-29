@@ -1,0 +1,25 @@
+<h2>Deudas</h2>
+<div *ngIf="errMessage" class="alert alert-danger animated fadeIn">
+  <h3>Error</h3>
+  <p>
+    {{errMessage}}
+  </p>
+</div>
+<h3 class="p-3 text-center"></h3>
+<div class="container">
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th align="left">Deuda</th>
+        <th align="right">Importe</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let deuda of deudaView">
+        <td>{{deuda.nombreDeudor}} debe a {{deuda.nombreAcreedor}}</td>
+        <td align="right">{{deuda.importe | number:'1.2-2'}} €</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h3></h3>

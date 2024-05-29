@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "AngularMenu1", "AngularMenu1\AngularMenu1.esproj", "{A792B1C0-A988-4731-B056-3508ABA33804}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A792B1C0-A988-4731-B056-3508ABA33804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A792B1C0-A988-4731-B056-3508ABA33804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A792B1C0-A988-4731-B056-3508ABA33804}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A792B1C0-A988-4731-B056-3508ABA33804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A792B1C0-A988-4731-B056-3508ABA33804}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A792B1C0-A988-4731-B056-3508ABA33804}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8C6519F-EADF-4623-9F8F-D29C66F63F3C}
+	EndGlobalSection
+EndGlobal

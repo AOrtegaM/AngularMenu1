@@ -1,0 +1,25 @@
+<h2>Balance</h2>
+<div *ngIf="errMessage" class="alert alert-danger animated fadeIn">
+  <h3>Error</h3>
+  <p>
+    {{errMessage}}
+  </p>
+</div>
+<h3 class="p-3 text-center"></h3>
+<div class="container">
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th align="left">Nombre</th>
+        <th align="right">Importe</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let balance of balanceView">
+        <td>{{balance.nombre}} {{balance.apellidos}}</td>
+        <td align="right">{{balance.importe | number:'1.2-2'}} €</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h3></h3>

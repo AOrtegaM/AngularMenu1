@@ -1,0 +1,26 @@
+<h2>Nuevo Amigo</h2>
+<div *ngIf="errMessage" class="alert alert-danger animated fadeIn">
+  <h3>Error</h3>
+  <p>
+    {{errMessage}}
+  </p>
+</div>
+<h3 class="p-3 text-center"></h3>
+<div style="width:30vw; height:30vw; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+  <div [formGroup]="form" style="width: 30vw; height: 30vw; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 10px;">
+
+    <mat-form-field appearance="fill">
+      <mat-label>Nombre</mat-label>
+      <input matInput formControlName="nombre" name="nombre">     
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Apellidos</mat-label>
+      <input matInput formControlName="apellidos">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="sendValues()" [disabled]="form.invalid">Enviar</button>
+
+  </div>
+</div>
